@@ -14,10 +14,10 @@ namespace MvcMovie.Controllers
 
         // 
         // GET: /HelloWorld/Welcome/ 
-        public IActionResult Welcome(string name, int times = 1)
+        public IActionResult Welcome(string name, int numtimes = 1)
         {
             ViewData["Message"] = "Hello" + name;
-            ViewData["NumTimes"] = times;
+            ViewData["NumTimes"] = numtimes;
             return View();
         }
     }
