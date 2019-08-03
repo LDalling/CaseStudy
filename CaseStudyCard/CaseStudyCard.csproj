@@ -11,6 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Update="Views\CardSystem\Index.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
     <Content Update="Views\HelloWorld\Welcome.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
