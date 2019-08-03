@@ -5,15 +5,15 @@
 <h2>Pre-qualification tool</h2>
 
 <p>Please fill out the following fields:</p> 
-
+@model CaseStudyCard.Models.ApplicationForm
 <form asp-action="Response" asp-controller="CardSystem">
-    <label>First Name:</label>
-    <input type="text" name="FirstName" /><br />
-    Last name:<br />
-    <input type="text" name="LastName" /><br />
-    Date of Birth:<br />
-    <input type="date" name="DateOfBirth" /><br />
-    Annual Income<br />
-    <input type="text" name="Income" /><br />
+    <label>First Name:</label><br />
+    <input asp-for="FirstName" name="FirstName" /><br />
+    <label>Last name:</label><br />
+    <input asp-for="LastName" name="LastName" /><br />
+    <label>Date of Birth:</label><br />
+    <input asp-for="DOB" name="DateOfBirth" /><br />
+    <label>Annual Income</label><br />
+    <input asp-for="Income" name="Income" /><br />
     <input type="submit" />
 </form>

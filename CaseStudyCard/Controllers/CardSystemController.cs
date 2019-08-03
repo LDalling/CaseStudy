@@ -18,7 +18,6 @@ namespace CaseStudyCard.Controllers
 
         public IActionResult Result()
         {
-            NameValueCollection nvc = Request.Form;
 
             ViewData["Message"] = "Your application description page.";
 

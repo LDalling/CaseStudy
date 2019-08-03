@@ -11,6 +11,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Update="Views\CardSystem\Index - Copy %282%29.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\CardSystem\Result.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
     <Content Update="Views\CardSystem\Index.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>

@@ -7,10 +7,10 @@ namespace CaseStudyCard.Models
 {
     public class ApplicationForm
     {
-        private string FirstName { get; set; }
-        private string LastName { get; set; }
-        private DateTime DOB { get; set; }
-        private string Last { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public DateTime DOB { get; set; }
+        public string Income { get; set; }
 
     }
 }
