@@ -18,9 +18,7 @@ namespace CaseStudyCard.Controllers
 
         public IActionResult Result()
         {
-
             ViewData["Message"] = "Your application description page.";
-
             return View();
         }
     }
