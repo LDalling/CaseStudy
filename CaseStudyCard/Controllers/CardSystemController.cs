@@ -15,10 +15,10 @@ namespace CaseStudyCard.Controllers
         {
             return View();
         }
-
-        public IActionResult Result()
+        [HttpPost]
+        public IActionResult Response(ApplicationForm model)
         {
-            ViewData["Message"] = "Your application description page.";
+            
             return View();
         }
     }
