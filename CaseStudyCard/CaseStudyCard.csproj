@@ -14,7 +14,7 @@
     <Content Update="Views\CardSystem\Index - Copy %282%29.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
-    <Content Update="Views\CardSystem\Result.cshtml">
+    <Content Update="Views\CardSystem\Response.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
     <Content Update="Views\CardSystem\Index.cshtml">
