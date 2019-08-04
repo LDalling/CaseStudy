@@ -12,5 +12,6 @@ namespace CaseStudyCard.Models
             : base(options)
         {
         }
+        public DbSet<CaseStudyCard.Models.ApplicationForm> ApplicationForm { get; set; }
     }
 }
