@@ -14,7 +14,8 @@ namespace CaseStudyCard.Models
 
         [DataType(DataType.Date)]
         public DateTime DOB { get; set; }
-        public string Income { get; set; }
+        public int Income { get; set; }
+        public string CardsShown { get; set; }
 
     }
 }

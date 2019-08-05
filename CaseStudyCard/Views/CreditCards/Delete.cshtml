@@ -1,0 +1,63 @@
+﻿@model CaseStudyCard.Models.CreditCard
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>CreditCard</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CardName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CardName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PromotionalMessage)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PromotionalMessage)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ImageURL)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ImageURL)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.APR)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.APR)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MinimumAge)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MinimumAge)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MinimumEarnings)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MinimumEarnings)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MaximumEarnings)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MaximumEarnings)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

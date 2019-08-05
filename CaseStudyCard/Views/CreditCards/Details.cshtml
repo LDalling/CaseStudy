@@ -1,0 +1,60 @@
+﻿@model CaseStudyCard.Models.CreditCard
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CreditCard</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CardName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CardName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PromotionalMessage)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PromotionalMessage)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ImageURL)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ImageURL)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.APR)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.APR)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MinimumAge)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MinimumAge)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MinimumEarnings)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MinimumEarnings)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MaximumEarnings)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MaximumEarnings)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

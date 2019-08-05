@@ -1,0 +1,63 @@
+﻿@model CaseStudyCard.Models.CreditCard
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>CreditCard</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CardName" class="control-label"></label>
+                <input asp-for="CardName" class="form-control" />
+                <span asp-validation-for="CardName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PromotionalMessage" class="control-label"></label>
+                <input asp-for="PromotionalMessage" class="form-control" />
+                <span asp-validation-for="PromotionalMessage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageURL" class="control-label"></label>
+                <input asp-for="ImageURL" class="form-control" />
+                <span asp-validation-for="ImageURL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="APR" class="control-label"></label>
+                <input asp-for="APR" class="form-control" />
+                <span asp-validation-for="APR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MinimumAge" class="control-label"></label>
+                <input asp-for="MinimumAge" class="form-control" />
+                <span asp-validation-for="MinimumAge" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MinimumEarnings" class="control-label"></label>
+                <input asp-for="MinimumEarnings" class="form-control" />
+                <span asp-validation-for="MinimumEarnings" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MaximumEarnings" class="control-label"></label>
+                <input asp-for="MaximumEarnings" class="form-control" />
+                <span asp-validation-for="MaximumEarnings" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

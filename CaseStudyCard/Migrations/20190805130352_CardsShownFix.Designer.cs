@@ -4,14 +4,16 @@ using CaseStudyCard.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CaseStudyCard.Migrations
 {
     [DbContext(typeof(CaseStudyCardContext))]
-    partial class CaseStudyCardContextModelSnapshot : ModelSnapshot
+    [Migration("20190805130352_CardsShownFix")]
+    partial class CardsShownFix
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

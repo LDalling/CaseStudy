@@ -2,13 +2,13 @@
 
 <p>Please fill out the following fields:</p> 
 @model CaseStudyCard.Models.ApplicationForm
-<form asp-action="Response" asp-controller="CardSystem">
+<form asp-action="FormResponse" asp-controller="CardSystem">
     <label>First Name:</label><br />
     <input asp-for="FirstName" name="FirstName" /><br />
     <label>Last name:</label><br />
     <input asp-for="LastName" name="LastName" /><br />
     <label>Date of Birth:</label><br />
-    <input asp-for="DOB" name="DateOfBirth" /><br />
+    <input asp-for="DOB" name="DOB" /><br />
     <label>Annual Income</label><br />
     <input asp-for="Income" name="Income" /><br />
     <input type="submit" />

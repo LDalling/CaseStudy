@@ -14,12 +14,16 @@
     <Content Update="Views\CardSystem\Index - Copy %282%29.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
-    <Content Update="Views\CardSystem\Response.cshtml">
+    <Content Update="Views\CardSystem\FormResponse.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
     <Content Update="Views\CardSystem\Index.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\cards\" />
   </ItemGroup>
 
 </Project>

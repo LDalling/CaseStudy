@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using CaseStudyCard.Models;
 
 namespace CaseStudyCard.Models
 {
@@ -13,5 +14,6 @@ namespace CaseStudyCard.Models
         {
         }
         public DbSet<CaseStudyCard.Models.ApplicationForm> ApplicationForm { get; set; }
+        public DbSet<CaseStudyCard.Models.CreditCard> CreditCard { get; set; }
     }
 }
